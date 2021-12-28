@@ -11,10 +11,6 @@ services:
     container_name: ${APP_NAME}-backend
     build: ./backend
 
-    env_file:
-      - ./.env
-      - ./backend/.env
-
     networks:
       - ${APP_NAME}-net
 

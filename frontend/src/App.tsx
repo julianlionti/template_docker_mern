@@ -9,7 +9,9 @@ const App = () => {
           <h1>Main 4</h1>
         </div>
       </main>
-      <footer>Footer. Enviroment: {Config.MODE}</footer>
+      <footer>
+        Footer. Enviroment: {Config.MODE} - URL: {Config.BASE_URL}
+      </footer>
     </>
   );
 };

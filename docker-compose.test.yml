@@ -4,7 +4,7 @@ services:
     container_name: ${APP_NAME}-frontend-test
     build:
       context: ./frontend
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.test
 
     ports:
       - 8086:80
@@ -17,7 +17,7 @@ services:
     container_name: ${APP_NAME}-backend-test
     build:
       context: ./backend
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.test
 
     env_file:
       - ./.env.test
