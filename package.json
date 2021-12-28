@@ -1,0 +1,26 @@
+{
+  "name": "soffacto-container",
+  "version": "0.0.5",
+  "description": "Soffacto container",
+  "scripts": {
+    "docker:build": "docker-build",
+    "docker:dev": "docker-compose up --build",
+    "docker:test": "docker-compose -f docker-compose.yml -f docker-compose.test.yml up -d --build",
+    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianlionti/soffacto-container.git"
+  },
+  "keywords": [
+    "Soffacto",
+    "Julian",
+    "Lionti"
+  ],
+  "author": "Julián Lionti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianlionti/soffacto-container/issues"
+  },
+  "homepage": "https://github.com/julianlionti/soffacto-container#readme"
+}

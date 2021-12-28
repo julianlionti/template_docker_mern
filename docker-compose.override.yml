@@ -1,9 +1,20 @@
 version: "3.3"
 services:
   frontend:
+    ports:
+      - 3000:3000
+
+    env_file:
+      - ./.env
+      - ./frontend/.env
+
     volumes:
       - ./frontend/:/app
 
   backend:
     volumes:
       - ./backend/src:/app/src
+
+    env_file:
+      - ./.env
+      - ./backend/.env

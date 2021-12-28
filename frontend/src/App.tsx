@@ -6,7 +6,7 @@ const App = () => {
       <header>Header</header>
       <main>
         <div>
-          <h1>Main 1</h1>
+          <h1>Main 4</h1>
         </div>
       </main>
       <footer>Footer. Enviroment: {Config.MODE}</footer>
