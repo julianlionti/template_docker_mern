@@ -1,0 +1,28 @@
+version: "3.3"
+services:
+  frontend:
+    build: ./frontend
+    container_name: ${APP_NAME}-frontend
+    ports:
+      - 3000:3000
+
+    env_file:
+      - ./.env
+      - ./frontend/.env
+
+    networks:
+      - ${APP_NAME}-net
+
+  backend:
+    build: ./backend
+    container_name: ${APP_NAME}-backend
+
+    env_file:
+      - ./.env
+      - ./backend/.env
+
+    networks:
+      - ${APP_NAME}-net
+
+networks:
+  soffacto-net:

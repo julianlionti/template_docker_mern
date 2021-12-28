@@ -1,0 +1,36 @@
+{
+  "name": "soffacto-backend",
+  "version": "0.0.5",
+  "description": "Soffacto backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianlionti/soffacto_backend.git"
+  },
+  "keywords": [
+    "soffacto",
+    "Julian",
+    "Lionti"
+  ],
+  "author": "Julian Lionti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianlionti/soffacto_backend/issues"
+  },
+  "homepage": "https://github.com/julianlionti/soffacto_backend#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.5",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
