@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/julianlionti/soffacto-container/issues"
   },
-  "homepage": "https://github.com/julianlionti/soffacto-container#readme"
+  "homepage": "https://github.com/julianlionti/soffacto-container#readme",
+  "devDependencies": {}
 }
