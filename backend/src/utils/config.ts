@@ -6,6 +6,7 @@ interface IConfig {
   PORT: number;
   DB_USER: string;
   DB_PASS: string;
+  RabbitMQ: string;
 }
 
 const Config: IConfig = {
@@ -13,6 +14,7 @@ const Config: IConfig = {
   PORT: 5000,
   DB_USER: process.env.MONGO_INITDB_ROOT_USERNAME!!,
   DB_PASS: process.env.MONGO_INITDB_ROOT_PASSWORD!!,
+  RabbitMQ: "amqp://rabbitmq:5672",
 };
 
 export default Config;
