@@ -1,7 +1,6 @@
 version: "3.3"
 services:
   frontend:
-    container_name: ${COMPOSE_PROJECT_NAME}-frontend
     build:
       context: ./frontend
       dockerfile: Dockerfile.test
@@ -14,7 +13,6 @@ services:
       - ./frontend/.env.test
 
   backend:
-    container_name: ${COMPOSE_PROJECT_NAME}-backend
     build:
       context: ./backend
       dockerfile: Dockerfile.test
