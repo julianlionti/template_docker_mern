@@ -14,12 +14,16 @@ services:
     networks:
       - soffacto-net
 
+    depends_on:
+      - frontend
+      - mongodb
+
   mongodb:
     image: mongo:4.4.11-rc1-focal
     container_name: ${COMPOSE_PROJECT_NAME}-mongo
 
     volumes:
-      - ./data/${COMPOSE_PROJECT_NAME}:/data/db
+      - ./data/${COMPOSE_PROJECT_NAME}/db/:/data/db
 
     networks:
       - soffacto-net
