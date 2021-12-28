@@ -5,8 +5,8 @@
   "scripts": {
     "docker:build": "docker-build",
     "docker:dev": "docker-compose up --build",
-    "docker:test": "docker-compose -f docker-compose.yml -f docker-compose.test.yml up -d --build",
-    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build"
+    "docker:test": "docker-compose -p soffacto-test -f docker-compose.yml -f docker-compose.test.yml up -d --build --no-deps",
+    "docker:prod": "docker-compose -p soffacto-prod -f docker-compose.yml -f docker-compose.prod.yml up -d --build --no-deps"
   },
   "repository": {
     "type": "git",
