@@ -1,18 +1,25 @@
 version: "3.3"
 services:
   frontend:
-    container_name: ${APP_NAME}-frontend
+    container_name: ${COMPOSE_PROJECT_NAME}-frontend
     build: ./frontend
 
     networks:
-      - ${APP_NAME}-net
+      - soffacto-net
 
   backend:
-    container_name: ${APP_NAME}-backend
+    container_name: ${COMPOSE_PROJECT_NAME}-backend
     build: ./backend
 
     networks:
-      - ${APP_NAME}-net
+      - soffacto-net
+
+  mongodb:
+    image: mongo:4.4.11-rc1-focal
+    container_name: ${COMPOSE_PROJECT_NAME}-mongo
+
+    volumes:
+      - /data/${COMPOSE_PROJECT_NAME}:/data/db
 
 networks:
   soffacto-net:

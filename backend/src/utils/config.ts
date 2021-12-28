@@ -2,7 +2,7 @@ import { config } from "dotenv";
 config();
 
 const Config = {
-  APP_NAME: process.env.APP_NAME,
+  APP_NAME: process.env.COMPOSE_PROJECT_NAME,
   PORT: 5000,
 };
 
