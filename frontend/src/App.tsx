@@ -9,7 +9,16 @@ const App = () => {
           <h1>Main 6</h1>
         </div>
       </main>
-      <footer>
+      <footer
+        style={{
+          color:
+            Config.MODE === "development"
+              ? "red"
+              : Config.MODE === "test"
+              ? "blue"
+              : "orange",
+        }}
+      >
         Footer. Enviroment: {Config.MODE} - URL: {Config.BASE_URL}
       </footer>
     </>
