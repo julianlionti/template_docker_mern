@@ -29,7 +29,7 @@ pipeline {
     
     stage('Run') {
       steps {
-        sh 'docker-compose --env-file ./.env.production -f docker-compose.yml -f docker-compose.prod.yml up -d'
+        sh 'docker-compose --env-file ./.env.test -f docker-compose.yml -f docker-compose.test.yml up -d'
       }
     }
 
