@@ -22,7 +22,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker-compose build'
+        sh 'docker-compose --env-file ./.env.test -f docker-compose.yml -f docker-compose.test.yml build'
         sh 'docker-compose push'
       }
     }
